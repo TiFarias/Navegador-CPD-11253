@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navegador CPD", "Navegador CPD\Navegador CPD.csproj", "{80922066-1131-40E5-80B9-B2473261AECF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C51D6B26-03C9-4EA4-9DC1-7C378D6FCADA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80922066-1131-40E5-80B9-B2473261AECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80922066-1131-40E5-80B9-B2473261AECF}.Debug|x86.ActiveCfg = Debug|x86
+		{80922066-1131-40E5-80B9-B2473261AECF}.Debug|x86.Build.0 = Debug|x86
+		{80922066-1131-40E5-80B9-B2473261AECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80922066-1131-40E5-80B9-B2473261AECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80922066-1131-40E5-80B9-B2473261AECF}.Release|x86.ActiveCfg = Release|x86
+		{80922066-1131-40E5-80B9-B2473261AECF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EC3D060-F20B-4409-B6AF-11DE2E5FD807}
+	EndGlobalSection
+EndGlobal
