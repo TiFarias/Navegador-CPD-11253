@@ -1,0 +1,32 @@
+name: Build Navegador CPD11253
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout do Código
+      uses: actions/checkout@v4
+
+    - name: Configurar MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Configurar NuGet
+      uses: NuGet/setup-nuget@v1
+
+    - name: Restaurar Pacotes NuGet
+      # Isso vai baixar o CefSharp, WebView2 e EasyTabs que vimos no seu arquivo
+      run: nuget restore
+
+    - name: Compilar Projeto (Release x86)
+      # Forçamos x86 porque o CefSharp costuma exigir uma arquitetura definida
+      run: msbuild /p:Configuration=Release /p:Platform=x86 /p:OutputPath=../dist
+
+    - name: Disponibilizar para Download
+      uses: actions/upload-artifact@v4
+      with:
+        name: Navegador-CPD1011-v3-Completo
+        path: ./dist/
